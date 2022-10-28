@@ -1,0 +1,47 @@
+body section ul li, body section div, body section, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #6fe2cd;
+}
+body section {
+  border-radius: 5px;
+  background: white;
+  padding: 2rem 0;
+  width: 70%;
+  flex-direction: column;
+}
+body section div {
+  width: 100%;
+  margin: 1rem;
+}
+body section div input {
+  width: 70%;
+  height: 2rem;
+  margin: 1rem;
+}
+body section div button {
+  height: 2rem;
+  width: 6rem;
+  margin: 1rem;
+  background: #6fe2cd;
+  border: none;
+  border-radius: 5px;
+}
+body section ul li {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 1rem;
+  list-style: none;
+}

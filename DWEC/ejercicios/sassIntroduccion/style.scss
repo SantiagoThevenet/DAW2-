@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$colorFunte: blue;
+
+h1{
+    color: $colorFunte;
+}
+
+p{
+    $colorFunte: rgb(255, 160, 242);
+    color: $colorFunte;
+}
+
+#contenido{
+    $colorFunte: tomato !global;
+    background: none;
+    padding: .7rem 3rem;
+    border: 1px solid ;
+    color: $colorFunte;
+}
+
+section{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

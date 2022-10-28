@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://c.tenor.com/O7NOWzsUw18AAAAC/pumping-iron-arnold-schwarzenegger.gif");
+    background-position: center;
+    color: white;
+}
+
+section {
+    border: 2px solid white;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem
+}
+
+
+img {
+    -webkit-box-shadow: 14px 10px 60px 11px rgba(0, 0, 0, 0.82);
+    -moz-box-shadow: 14px 10px 60px 11px rgba(0, 0, 0, 0.82);
+    box-shadow: 14px 10px 60px 11px rgba(0, 0, 0, 0.82);
+    height: 40vh;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3,
+h1,
+img,
+button {
+    margin: 1rem;
+}
+
+button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: .7rem 3rem;
+    border-radius: .5rem;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: rgb(23, 32, 41);
+}

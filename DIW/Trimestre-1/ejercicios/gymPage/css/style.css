@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5d07f87f8ac0bf00019389a4/1638220970423-8M3TQBPVVO1PJ559SEFP/TN_Website_Bench.jpg?format=2500w");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 12%;
+  height: 10vh;
+}
+body header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+body header ul li {
+  font-size: 1.5rem;
+  margin: 0 3rem;
+}
+body header i {
+  font-size: 3rem;
+}
+body main .inicio {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+body main .inicio .mot-text {
+  background: rgba(0, 0, 0, 0.8549019608);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  padding: 3rem;
+  border-radius: 5px;
+  margin-top: 10rem;
+}
+body main .inicio .mot-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+body main .inicio .mot-text p {
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+body main .inicio .rrss i {
+  margin: 1.5rem;
+  font-size: 2rem;
+}
+body main #contacto {
+  background: rgba(0, 0, 0, 0.6549019608);
+  padding-top: 3rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body main #contacto h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+body main #contacto p {
+  margin: 2rem;
+  width: 80%;
+  text-align: center;
+}
+body main #contacto .form {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+body main #contacto .form input {
+  height: 2rem;
+  width: 100%;
+  padding-left: 5px;
+}
+body main #contacto .form button {
+  background: none;
+  padding: 2rem 3rem;
+  border: 1px solid white;
+}

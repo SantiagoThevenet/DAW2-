@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+.side-bar{
+    width: 10%;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side-bar h2{
+    border-radius: 50%;
+    width: 4rem;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.side-bar .iconos-rrss{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 4rem .5rem;
+}
+svg{
+    margin: .5rem;
+    fill: white;
+}
+
+.section-image  {
+    width: 30%;
+}
+
+.section-image img {
+    width: 100%;
+    height: 50rem;
+}
+.image-description{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.nav-main{
+    background-color: purple;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-main .nav-bar ul {
+    display: flex;
+}
+.nav-main .nav-bar ul li{
+    list-style: none;
+    padding: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-main h1{
+    font-size: 6rem;
+    color: white;
+    margin-top: 5rem;
+}
+
+.nav-main input{
+    width: 58rem;
+    height: 4rem;
+    text-align: left;
+    position: absolute;
+    top: 45%;
+    right: 20%;
+    font-size: 1.3rem;
+}
+
+.nav-main input{
+    padding-left: 1rem;
+}

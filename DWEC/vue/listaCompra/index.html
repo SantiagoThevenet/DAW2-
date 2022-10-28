@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section id="principal">
+        <div id="mi_app">
+            <header>
+                <h1>{{titulo || 'Bienvenido'}}</h1>
+                <button v-if="edit" @click="editando(false)">Cancelar</button>
+                <button v-else @click="editando(true)">Añadir elemento</button>
+            </header>
+            <div v-if="edit">
+                <input placeholder="Producto: " type="text" @keyup.enter="guardarElemento" v-model="texto">
+                <div>
+                    <button @click="guardarElemento">Añadir</button>
+                    <button v-if="lista.length >= 1" @click="borrarElemento">Borrar</button>
+                </div>
+
+                <ul>
+                    <li v-for="elemento in lista">{{elemento}}</li>
+                </ul>
+                <p v-if="lista.length === 0">No hay elemento en la lista</p>
+                <a :href="texto">Enlace</a>
+                <img :src="imagen" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

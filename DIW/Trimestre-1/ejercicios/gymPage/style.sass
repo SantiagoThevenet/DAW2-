@@ -1,0 +1,96 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    color: white
+    font-family: 'Roboto', sans-serif
+    list-style: none
+    text-decoration: none
+
+html
+    scroll-behavior: smooth
+
+@mixin flex($justify, $direction) 
+    display: flex
+    align-items: center
+    justify-content: $justify
+    flex-direction: $direction
+
+
+body
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5d07f87f8ac0bf00019389a4/1638220970423-8M3TQBPVVO1PJ559SEFP/TN_Website_Bench.jpg?format=2500w')
+    background-repeat: no-repeat
+    background-size: cover
+
+    background-attachment: fixed
+    background-position: center
+
+    header
+        @include flex(space-between, row)
+        margin: 0 12%
+        height: 10vh
+        
+        ul
+            @include flex(center, row)
+            li
+                font-size: 1.5rem
+                margin: 0  3rem
+
+        i
+            font-size: 3rem
+
+    main
+        
+        .inicio
+            height: 90vh
+            @include flex(space-between, column)
+
+            .mot-text
+                background: #000000da
+                @include flex(center, column)
+                width: 80%
+                padding: 3rem
+                border-radius: 5px
+                margin-top: 10rem
+
+                h1
+                    font-size: 3rem
+                    font-weight: 700                
+
+                p
+                    margin-top: 3rem
+                    font-size: 1.1rem
+                    text-align: center
+
+            .rrss
+                i
+                    margin: 1.5rem
+                    font-size: 2rem
+        #contacto
+            background: #000000a7
+            padding-top: 3rem
+            height: 100vh
+            display: flex
+            align-items: center
+            flex-direction: column
+            h1
+                font-size: 3rem
+                margin-bottom: 1rem
+            p
+                margin: 2rem
+                width: 80%
+                text-align: center
+            .form
+                width: 80%
+                height: 80%
+                @include flex(space-around, column)
+                input
+                    height: 2rem
+                    width: 100%
+                    padding-left: 5px
+                
+                button
+                    // width: 3rem 2rem
+                    background: none
+                    padding: 2rem 3rem 
+                    border: 1px solid white

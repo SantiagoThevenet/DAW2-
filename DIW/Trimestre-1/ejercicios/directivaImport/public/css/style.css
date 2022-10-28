@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section, section article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  height: 100vh;
+  background: rgb(191, 143, 236);
+}
+section article {
+  height: 60%;
+  background-color: white;
+  padding: 0 12%;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgb(71, 62, 64);
+  flex-direction: column;
+}
+section article p {
+  font-weight: 300;
+  font-size: medium;
+}
+section article h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  section article {
+    background-color: white;
+    width: 80%;
+  }
+  section article h1 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+}

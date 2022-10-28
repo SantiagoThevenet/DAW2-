@@ -1,0 +1,50 @@
+%flex
+    display: flex
+    justify-content: center
+    align-items: center
+    
+
+*
+    margin: 0 
+    padding: 0
+    box-sizing: border-box 
+
+
+body
+    height: 100vh
+    background: #6fe2cd
+    @extend %flex
+    section
+        border-radius: 5px
+        background: white
+        padding: 2rem 0
+        width: 70%
+        @extend %flex
+        flex-direction: column
+
+        div
+            @extend %flex
+            width: 100%
+            margin: 1rem
+            input
+                width: 70%
+                height: 2rem
+                margin: 1rem
+            button
+                height: 2rem
+                width: 6rem
+                margin: 1rem
+                background: #6fe2cd
+                border: none
+                border-radius: 5px
+        ul
+            li
+                border: 1px solid
+                border-radius: 5px
+                padding: .5rem
+                margin: 1rem
+                list-style: none
+                @extend %flex
+
+
+

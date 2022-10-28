@@ -1,0 +1,46 @@
+$borde_redondo: true
+%flexbox
+    display: flex
+    justify-content: center
+    align-items: center
+    
+
+%boton_base
+    border-radius: if($borde_redondo, 5px, null)
+    margin: 0 2rem
+    padding: .5rem 1rem
+    cursor: pointer
+    transition: .3s
+    color: white
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    
+body 
+    height: 100vh
+    background-color: gray
+    @extend %flexbox
+
+#pricipal
+    background: white
+    width: 70%
+    height: 300px
+    @extend %flexbox
+    flex-direction: column
+    box-shadow: 1px 1px 1px black
+
+
+    .botones
+        @extend %flexbox
+        #bot1
+            background: green
+        #bot2
+            background: red
+                
+        .boton
+            @extend %boton_base
+
+            &:hover
+                box-shadow: 1px 1px 1px black
+                transform: scale(1.5)

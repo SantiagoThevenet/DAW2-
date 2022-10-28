@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body button {
+  color: black;
+  background: none;
+  border: 1px solid;
+  width: 8rem;
+  height: 2rem;
+}
+body #popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body #popup .popuptitulo {
+  width: 80%;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  background: black;
+  flex-direction: column;
+  box-shadow: 3px 3px 3px #5c5252;
+}
+body #popup .popuptitulo .popuptitulo2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+body #popup .popuptitulo .popuptitulo2 i {
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+}
+body #popup p {
+  margin-top: 2rem;
+  text-align: justify;
+}/*# sourceMappingURL=style.css.map */

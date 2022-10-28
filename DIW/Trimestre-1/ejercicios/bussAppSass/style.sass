@@ -1,0 +1,181 @@
+%flex
+    display: flex
+    justify-content: center
+    align-items: center
+
+html
+    scroll-behavior: smooth
+
+*
+    font-family: 'Roboto', sans-serif
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    list-style: none
+    text-decoration: none
+
+body
+    background-color: #032432
+    color: #E5E2D7
+
+header
+    z-index: 99
+    width: 100%
+    height: 15vh
+    position: fixed
+    background: #032432
+    ul
+        display: flex
+        justify-content: space-between
+        align-items: center
+        li
+            margin: 3rem 2.5rem 0 2.5rem
+            a i
+                font-size: 2.5rem
+                color: #78bacc
+
+main
+    @extend %flex
+    flex-direction: column
+    .start
+        height: 85vh
+        display: flex
+        margin-bottom: 5rem
+        align-items: center
+        justify-content: space-around
+        flex-direction: column
+        .title
+            margin-top: 18rem
+            margin-bottom: 2rem
+            flex-direction: column
+            @extend %flex
+            p
+                text-align: center
+            h1,p
+                margin: .5rem 0
+            h1
+                font-size: 2.1rem
+        .cards
+            @extend %flex
+            margin: 1rem
+            .card1
+                @extend  %flex
+                flex-direction: column
+                text-align: center
+                margin: 1rem
+                width: 18vh
+                height: 25vh
+                border: 2px solid #95d0e0
+
+                i
+                    font-size: 2rem
+                    color: #55aec6
+                    margin-bottom: .5rem
+                h3
+                    margin-bottom: .5rem
+                p
+                    font-size: .9rem
+
+        #arrow-contact
+            flex-direction: column
+            @extend %flex
+
+            h1
+                margin-top: 2.5rem
+                font-size: 2.5rem
+            a
+                color: #E5E2D7
+                i
+                    margin: 3rem 0
+                    font-size: 6rem
+
+    #contact
+        height: 85vh
+        margin-top: 2.7rem
+        display: flex
+        align-items: center
+        width: 80%
+        flex-direction: column
+        .form
+            display: flex
+            flex-direction: column
+
+            textarea
+                resize: none
+                height: 12rem
+                padding: 5px
+
+            label
+                font-size: .8rem
+            
+            .inputs
+                height: 2rem
+                padding-left: 5px
+
+    
+            input,textarea,.checkbox,button
+                margin-top: 2rem
+                margin-bottom: .2rem
+            button
+                margin: 4rem
+                padding: 1rem
+                color: #E5E2D7
+                background: none
+                border: 1px solid #95d0e0
+                transition: .3s
+                i
+                    margin-right: .5rem
+
+            :hover
+                color: #032432
+                background: #E5E2D7
+
+    #carritoC
+        @extend %flex
+        height: 100vh
+        flex-direction: column
+        margin-top: 3rem
+        h1
+            margin-bottom: 1rem
+            font-size: 2.5rem
+        .tarjeta-carrito
+            border: 1px solid #95d0e0
+            padding: 2rem 1rem
+            display: flex
+            flex-direction: row
+            align-items: center
+            margin: 1rem
+            border-radius: 5px
+            margin-bottom: 2rem
+            .fa-bus
+                color: #95d0e0
+                font-size: 2.5rem
+                padding-right: 1rem
+            .div1
+                h3
+                    font-size: 1.3rem
+                .div2
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    #iconbus
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        margin-right: 1rem
+                        margin-top: .5rem
+                        i
+                            margin: 0 .5rem
+        button
+            padding: 1rem
+            color: wheat
+            background: none
+            border: 1px solid #95d0e0
+            transition: .3s
+            i
+                margin-right: .5rem
+                
+
+        button:hover
+            color: #032432
+            background: #E5E2D7

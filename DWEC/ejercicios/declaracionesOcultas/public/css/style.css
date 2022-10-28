@@ -1,0 +1,43 @@
+#pricipal .botones, #pricipal, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pricipal .botones .boton {
+  border-radius: 5px;
+  margin: 0 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: gray;
+}
+
+#pricipal {
+  background: white;
+  width: 70%;
+  height: 300px;
+  flex-direction: column;
+  box-shadow: 1px 1px 1px black;
+}
+#pricipal .botones #bot1 {
+  background: green;
+}
+#pricipal .botones #bot2 {
+  background: red;
+}
+#pricipal .botones .boton:hover {
+  box-shadow: 1px 1px 1px black;
+  transform: scale(1.5);
+}

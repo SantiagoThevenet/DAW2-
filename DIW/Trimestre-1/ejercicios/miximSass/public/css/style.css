@@ -1,0 +1,28 @@
+body #suuu {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+body #suuu #c1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+}
+
+body #suuu #c2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: yellow;
+}
+
+body #suuu #c3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: red;
+}

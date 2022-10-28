@@ -1,0 +1,80 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+
+
+#principal
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+
+
+
+#enlace 
+    text-decoration: none
+    cursor: pointer
+    background-color: black
+    color: white
+    padding: .4rem 1rem
+    border-radius: 5px
+    transition: .3s
+    &:hover
+        background: green
+        box-shadow: 0 2px 3px black
+        letter-spacing: 1px
+
+
+
+.caja-popup
+    position: fixed
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background: rgba(0, 0, 0, 0.8) 
+    transition: opacity .5s
+    opacity: 0
+    visibility: hidden
+
+    &:target
+        visibility: visible
+        opacity: 1
+
+
+.popup
+    padding: 20px
+    background: white
+    border-radius: 5px
+    width: 30%
+    position: relative
+    left: 34%
+    top: 34%
+
+    h2
+        margin: 1rem 0
+
+    .cerrar
+        position: absolute 
+        top: 12px
+        right: 20px
+        transition: .3s 
+        font-weight: bold
+        font-size: 30px
+        text-decoration: none
+        color: #333
+
+        &:hover
+            color: tomato
+        .contenido
+            max-height: 30%
+            overflow: auto
+
+@media only screen and (max-width: 768px)
+
+    .popup
+        left: 10% !important
+        width: 80% !important
+        

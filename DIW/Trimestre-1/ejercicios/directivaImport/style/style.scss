@@ -1,0 +1,47 @@
+@import "./_default.scss";
+
+
+section{
+    height: 100vh;
+    background: rgb(191, 143, 236);
+
+    article{
+        height: 60%;
+        background-color: white;
+        padding: 0 12%;
+        width: 80%;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px rgb(71, 62, 64);
+        flex-direction: column;
+
+        p{
+            font-weight: 300;
+            font-size: medium;
+        }
+        h1{
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+
+        @extend %flexbox
+    }
+    @extend %flexbox
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    section {
+        article{
+            background-color: white;
+            width: 80%;
+            
+            h1{
+                font-size: 2rem;
+                margin-bottom: 3rem;
+            }
+            
+        }
+    }
+}

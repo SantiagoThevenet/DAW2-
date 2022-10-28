@@ -1,0 +1,5 @@
+('127.0.0.1', 43518) - division by zero - 08-Oct-22 16:33:54
+Traceback (most recent call last):
+  File "/home/santiago/DAW/DAW2º/DWES/ejercicios/loggins-tcp-udp/loggin-tcp/server.py", line 19, in <module>
+    print(1/0)
+ZeroDivisionError: division by zero

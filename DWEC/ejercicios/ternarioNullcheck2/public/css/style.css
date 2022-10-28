@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 10rem 5rem;
+}
+
+input {
+  padding-left: 5px;
+  width: 100%;
+  margin: 1.5rem;
+  height: 5%;
+}
+
+button {
+  background: none;
+  border: 1px solid;
+  width: 10rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+h1 {
+  margin-top: 3rem;
+}

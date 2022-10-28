@@ -1,0 +1,55 @@
+@import '_por_defecto.sass'
+
+#principal
+    @include contenedor
+    height: 100vh
+    background-color: $color
+
+.caja
+    @include contenedor
+    flex-direction: column
+    max-width: 33.3%
+    width: 30%
+    height: 400px
+    margin: 2rem
+    background: white
+    border-radius: $borde_rodondo
+    box-shadow: $sombra
+    transition: .3s
+
+    &:hover
+        transform: translateY(-20px)
+
+h3, p
+   @include texto
+   
+
+h3
+    padding: $relleno
+    margin-top: 1rem
+    font-weight: 900
+    font-size: 30px
+
+#i1
+    font-size: 50px
+    @include estilo_iconos(green)
+#i2
+    font-size: 50px
+    @include estilo_iconos(blue)
+
+
+@media screen and (max-width: 680px)
+    #principal
+        height: 100%
+        flex-direction: column
+
+        .caja
+            height: 600px
+            max-width: 60%
+            width: 100%
+            
+        p 
+            margin-top: 1rem
+            padding: 0 10%
+            text-align: left
+

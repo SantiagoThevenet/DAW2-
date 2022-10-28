@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background: #75AADB; 
+    }
+  
+    .main-tarjeta{
+        border: 1px solid rgb(223, 253, 54);
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+    }
+    input{
+        border: none;
+        height: 2rem;
+        border-radius: .2rem;
+    }
+    .numero-tarjeta{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .naciminto-cvv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    i{
+        border-radius: 100%;
+        border: 1px solid white;
+        padding: 1rem;
+        z-index: 1;
+        position: absolute;
+        top: 65%;
+        background-color: white;
+    }
+    div{
+        margin-top: 1rem;
+    }
+    .cvv{
+        margin-left: 1rem;
+    }
+    button{
+        border-radius: 2rem;
+        background: white;
+        border: none;
+        margin: 1.5rem 5rem 0.5rem 5rem;
+        padding: .7rem 2rem;
+        transition: .4s;
+    }
+
+    button:hover{
+        background-color: rgb(255, 200, 200);
+    }
+    #nacimiento, #cvv{
+        width: 100%;    
+    }
+  }

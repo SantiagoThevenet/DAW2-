@@ -1,0 +1,38 @@
+$border: 1px solid;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alkalami", serif;
+}
+
+section {
+  border: $border;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  border: $border;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin: 0 1rem;
+
+      a {
+        text-decoration: none;
+        font-size: 1rem;
+      }
+
+      
+
+    }
+  }
+}

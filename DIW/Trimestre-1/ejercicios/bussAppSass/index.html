@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a onclick="quitarCarrito()" href="#inicio"><i class="fa-solid fa-bus"></i></a></li>
+            <li><a onclick="carrito()"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="inicio" class="start">
+            <div class="title">
+                <h1>SantiBus Aplicacion</h1>
+                <p>Con SantiBus podras reservar cualquier autobus disponible de toda España</p>
+            </div>
+            <div class="cards">
+                <div class="card1">
+                    <i class="fa-solid fa-bus"></i>
+                    <h3>Buscar Bus</h3>
+                    <p>A traves de nuestro buscador, busca de forma sencialla cualquier autobus disponible</p>
+                </div>
+                <div class="card1">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3>Cerca de ti</h3>
+                    <p>Gracias a nuestra nueva tecnologia pordras saber cuales son los autobuses mas cercanos a ti</p>
+                </div>
+            </div>
+            <div id="arrow-contact">
+                <h1>Contactanos</h1>
+                <a href="#move"><i class="fa fa-light fa-arrow-down-long"></i></a>
+            </div>
+        </div>
+        <div id="contact">
+            <h1 id="move">Contacto</h1>
+            <div class="form">
+
+                <input class="inputs" type="text" placeholder="Nombre">
+                <label>Introduce tu nombre</label>
+
+                <input class="inputs" type="text" placeholder="email@example.com">
+                <label>Introduce un email valido</label>
+
+                <textarea placeholder="Mensaje" name="" id=""></textarea>
+                <label>Envia un mensaje</label>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="">
+                    <label for="">Una vez informado sobre el tratamiento de mis datos personales, acepto que esan
+                        tratados con esta finalidad por SantiBus S.L <a href="">Terminos del servicio</a></label>
+                </div>
+
+                <button><i class="fa-solid fa-paper-plane"></i>Enviar Mensaje</button>
+            </div>
+        </div>
+        <div id="carritoC">
+            <h1>Carrito</h1>
+            <div class="tarjeta-carrito">
+                <i class="fa-solid fa-bus"></i>
+                <div class="div1">
+                    <h3>Valencia - Barcelona 11:00-14:00</h3>
+                    <div class="div2">
+                        <span>15.00€</span>
+                        <span id="iconbus"><i class="fa-solid fa-circle-plus"></i> 1 <i class="fa-solid fa-circle-minus"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta-carrito">
+                <i class="fa-solid fa-bus"></i>
+                <div class="div1">
+                    <h3>Valencia - Barcelona 11:00-14:00</h3>
+                    <div class="div2">
+                        <span>15.00€</span>
+                        <span id="iconbus"><i class="fa-solid fa-circle-plus"></i> 1 <i class="fa-solid fa-circle-minus"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta-carrito">
+                <i class="fa-solid fa-bus"></i>
+                <div class="div1">
+                    <h3>Valencia - Barcelona 11:00-14:00</h3>
+                    <div class="div2">
+                        <span>15.00€</span>
+                        <span id="iconbus"><i class="fa-solid fa-circle-plus"></i> 1 <i class="fa-solid fa-circle-minus"></i></span>
+                    </div>
+                </div>
+            </div>
+            <button> Comprar 45.00 €</button>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

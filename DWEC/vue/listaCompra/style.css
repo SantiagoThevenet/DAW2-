@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  width: 100%;
+  background: #ff0e0e;
+  background: linear-gradient(90deg, #cf4343 0%, #cfd139 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+body section {
+  width: 50%;
+}
+body section #mi_app {
+  background: #000000;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #fffbfb;
+}
+body section #mi_app header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+body section #mi_app header button {
+  width: 10rem;
+  height: 2rem;
+  margin: 2rem;
+  background: none;
+  border: 1px solid;
+  border-radius: 5px;
+}
+body section #mi_app div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body section #mi_app div div {
+  display: flex;
+  flex-direction: column;
+}
+body section #mi_app div div button {
+  width: 10rem;
+  height: 2rem;
+  margin: 1rem 0.5rem;
+  background: none;
+  border: 1px solid;
+  border-radius: 5px;
+}
+body section #mi_app div input {
+  padding-left: 5px;
+  margin: 1rem;
+  width: 50%;
+  height: 2rem;
+  color: black;
+}
+body section #mi_app div input::-moz-placeholder {
+  color: black;
+}
+body section #mi_app div input:-ms-input-placeholder {
+  color: black;
+}
+body section #mi_app div input::placeholder {
+  color: black;
+}
+body section #mi_app div ul {
+  max-height: 40vh;
+  overflow-y: scroll;
+  margin: 5rem 0;
+}
+body section #mi_app div ul li {
+  list-style: none;
+  margin: 1rem;
+}
+body section #mi_app div p {
+  margin: 1rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+$color: #222222
+$borde_rodondo: 10px
+$sombra: 3px 3px 3px #616161
+$margen: 10px 0
+$relleno: 0 32px
+
+
+@mixin contenedor
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+@mixin texto
+    font-family: 'Mulish', sans-serif
+    text-align: center
+    color: $color
+
+@mixin estilo_iconos($fondo)
+    padding: 1rem
+    border-radius: 50%
+    background-color: $fondo
+    color: white
+
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    

@@ -1,0 +1,26 @@
+body {
+  background-color: #0093E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+}
+body section input {
+  width: 50%;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+body section h1 {
+  width: 50%;
+  background: white;
+  border-radius: 3px;
+  padding-left: 8px;
+}

@@ -1,0 +1,31 @@
+@media only screen and ( max-width: 768px) {
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c2e50;
+        left: -100%;
+        top: 80px;
+        text-align: center;
+        transition: .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 90px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        opacity: .7;
+    }
+}

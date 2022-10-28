@@ -1,0 +1,22 @@
+@mixin flexbox($justify-content,$back:black)
+    display: flex
+    justify-content: $justify_content
+    align-items: center
+    background-color: $back
+    
+
+
+body
+    #suuu
+        height: 100vh
+        @include flexbox(center)
+        
+        #c1
+            @include flexbox(center,green)
+
+        #c2
+            @include flexbox(flex-end,yellow)
+
+        #c3
+            @include flexbox(flex-end,red)
+

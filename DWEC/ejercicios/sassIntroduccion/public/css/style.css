@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: blue;
+}
+
+p {
+  color: rgb(255, 160, 242);
+}
+
+#contenido {
+  background: none;
+  padding: 0.7rem 3rem;
+  border: 1px solid;
+  color: tomato;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
