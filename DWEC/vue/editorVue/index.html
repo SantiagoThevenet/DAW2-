@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="app">
+    <div class="main">
+        <h1>Editor</h1>
+        <input v-on:keyup.enter="textoUser" v-model="texto" type="text" placeholder="Texto del usuario">
+        <h1 id="h1Respuesta">{{respuesta}}</h1>
+        <div id="parametros">
+            <div class="opciones">
+                <h2>Color</h2>
+                <div>
+                    <span v-on:click="color('ff0000')" style="background:#ff0000 ;" class="color"></span>
+                    <span v-on:click="color('00ff2a')" style="background:#00ff2a ;" class="color"></span>
+                    <span v-on:click="color('1100ff')" style="background:#1100ff ;" class="color"></span>
+                </div>
+            </div>
+            <div class="opciones">
+                <h2>Tamaño</h2>
+                <div>
+                    <span v-on:click="size(4)">X2</span>
+                    <span v-on:click="size(6)">X4</span>
+                    <span v-on:click="size(8    )">X6</span>
+                </div>
+            </div>
+            <div class="opciones">
+                <h2>Fondo</h2>
+                <div>
+                    <span v-on:click="background('ff0000')" style="background: #ff0000 ;" class="color"></span>
+                    <span v-on:click="background('00ff2a')" style="background: #00ff2a ;" class="color"></span>
+                    <span v-on:click="background('1100ff')" style="background: #1100ff ;" class="color"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

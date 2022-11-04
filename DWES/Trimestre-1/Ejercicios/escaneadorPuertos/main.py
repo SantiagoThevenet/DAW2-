@@ -5,7 +5,6 @@ import threading
 ip = '127.0.0.1'
 n_threads = 2
 
-
 def escanearPuerto(rango1, rango2):
     for i in range(rango1, rango2):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:

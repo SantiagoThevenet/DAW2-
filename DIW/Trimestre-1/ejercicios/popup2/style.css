@@ -71,11 +71,4 @@
 .popup .cerrar .contenido {
   max-height: 30%;
   overflow: auto;
-}
-
-@media only screen and (max-width: 768px) {
-  .popup {
-    left: 10% !important;
-    width: 80% !important;
-  }
 }/*# sourceMappingURL=style.css.map */

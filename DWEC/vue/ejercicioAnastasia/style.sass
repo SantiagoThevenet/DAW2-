@@ -1,0 +1,104 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    color: #dfe2e4
+    font-family: 'Roboto', sans-serif
+
+
+body
+    background: #242428
+    // background: #000000f7
+    main
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100vh
+        flex-direction: column
+        
+        h1
+            font-size: 4rem
+        #form
+            z-index: 0
+            display: flex
+            flex-direction: column
+            width: 40%
+            input
+                padding-left: 8px
+
+                &::placeholder
+                    color: #dfe2df
+        button 
+            width: 9rem
+            background: none
+            border: 1px solid
+
+    #popup
+        position: fixed
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background: rgba(0, 0, 0, 0.8) 
+        transition: opacity .5s
+        opacity: 0
+        visibility: hidden
+        &:target
+            visibility: visible
+            opacity: 1
+
+    .popup1
+        top: 30%
+        left: 41.7%
+        padding: 20px
+        background: #f7f7f7
+        border-radius: 5px
+        width: 35vh
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+        div h2
+            margin: 1rem 0
+            color: #242428
+
+        .cerrar
+            position: absolute 
+            top: 12px
+            right: 20px
+            transition: .3s 
+            font-weight: bold
+            font-size: 30px
+            text-decoration: none
+            color: #333
+
+            &:hover
+                color: tomato
+            .contenido
+                max-height: 30%
+                overflow: auto
+
+
+input,select,button
+    margin: 1rem
+    height: 2rem
+    background: none
+    border: 1px solid
+
+select
+    padding-left: 5px
+
+option
+    color: #242428
+
+
+#hrefbutton
+    text-decoration: none
+    background-color: #dfe2df
+    color: #242428
+    border-radius: 10px
+    padding: 1rem 2rem
+    transition: .3s
+
+    &:hover
+        background-color: #b4b4b4

@@ -1,0 +1,5 @@
+El ejercicio consiste en lo siguente:
+-Muestra aleatoramente operaciones matematicas en una ventana 
+-En un input pones el resultado y con un h1 te pondra el resultado si es correcto o no
+-Con un boton podras cambiar de operacion y con el enter en el input comprobara el resultado
+-Hay que crear otra ventana que hara la funciona de historial: motrara la operacion, el resultado correcto y si te equivocaste

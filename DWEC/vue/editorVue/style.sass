@@ -1,0 +1,50 @@
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Poppins', sans-serif
+
+body
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .main
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
+        h1
+            margin: 2rem 0
+        input
+            width: 50%
+            height: 2rem
+            padding: 8px
+
+            &::placeholder
+                color: black
+
+        #parametros
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            .opciones
+                padding: 1rem
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                h2
+                    margin-bottom: 2rem
+                div span
+                    margin: 1rem
+                    font-size: 2rem
+                    cursor: pointer
+
+.color
+    padding: 0 1.4rem
+    border-radius: 100%

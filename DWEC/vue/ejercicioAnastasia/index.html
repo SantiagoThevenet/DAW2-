@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main id="app">
+        <h1>Formulario</h1>
+        <div id="form">
+            <input v-model="name" type="text" placeholder="Nombre">
+            <input v-model="surname" type="text" placeholder="Apellido">
+            <input v-model="date" type="date">
+            <select v-model="option">
+                <option>Hombre</option>
+                <option>Mujer</option>
+                <option>Otro</option>
+            </select>
+        </div>
+        <a id="hrefbutton" href="#popup" @click="popup()">Comprobar</a>
+
+        <div id="popup">
+            <div class="popup1">
+                <div>
+                    <h2 v-for="elemento,index in arrayForm">{{arrayNames[index]}}: {{elemento || 'Vacio'}}</h2>
+                </div>
+                <a href="#" class="cerrar">&times;</a>
+                <img class="contenido" :src="imgUrl" alt="">
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
+<!-- Crear un formulario para recoger datos de la persona(nombre, apellido, fecha de nacimiento, genero). Todos los campos son obligatorios. Si usuario  introduce todo bien sale un popup con gif y si no el popup sale el listado con los datos que faltan por rellenar -->
