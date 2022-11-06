@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="app">
+    <div class="main">
+        <h2>Editor</h2>
+        <input v-on:keyup.enter="inputRespuesta()" v-model="texto" type="text" placeholder="Escribe aqui: ">
+        <h3 :class="[{red:red},{blue:blue},{green:green},{x2:x2},{x4:x4},{x6:x6},{bred:bred},{bblue:bblue},{bgreen:bgreen},]">{{respuesta}}</h3>
+    
+        <div id="editar">
+            <div class="caja-editar">
+                <h2>Color</h2>
+                <div>
+                    <span style="background-color: red;" v-on:click="red = true, blue = false, green = false" class="circulo"></span>
+                    <span style="background-color: blue;" v-on:click="red = false, green = false ,blue = true" class="circulo"></span>
+                    <span style="background-color: green;" v-on:click="red = false, blue = false,green= true" class="circulo"></span>
+                </div>
+            </div>
+            <div class="caja-editar">
+                <h2>Tamaño</h2>
+                <div>
+                    <span v-on:click="x2 = true, x4 = false, x6 = false">X2</span>
+                    <span v-on:click="x2 = false, x4 = true, x6 = false">X4</span>
+                    <span v-on:click="x2 = false, x4 = false, x6 = true">X6</span>
+                </div>
+            </div>
+            <div class="caja-editar">
+                <h2>Background</h2>
+                <div>
+                    <span style="background-color: red;" v-on:click="bred = true, bblue = false, bgreen = false" class="circulo"></span>
+                    <span style="background-color: blue;" v-on:click="bred = false, bgreen = false ,bblue = true" class="circulo"></span>
+                    <span style="background-color: green;" v-on:click="bred = false, bblue = false,bgreen= true" class="circulo"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

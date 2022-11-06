@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+body .main h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+body .main h3 {
+  margin-top: 2rem;
+}
+body .main input {
+  width: 50%;
+  height: 2rem;
+  padding: 8px;
+}
+body .main input::-moz-placeholder {
+  color: black;
+  font-size: 1rem;
+}
+body .main input:-ms-input-placeholder {
+  color: black;
+  font-size: 1rem;
+}
+body .main input::placeholder {
+  color: black;
+  font-size: 1rem;
+}
+body .main #editar {
+  display: flex;
+  flex-direction: row;
+}
+body .main #editar .caja-editar {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+body .main #editar .caja-editar h2 {
+  font-size: 2.4rem;
+}
+body .main #editar .caja-editar div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+body .main #editar .caja-editar div span {
+  font-size: 2rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.circulo {
+  background: red;
+  padding: 1.4rem;
+  border-radius: 100%;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+.x2 {
+  font-size: 2rem;
+}
+
+.x4 {
+  font-size: 4rem;
+}
+
+.x6 {
+  font-size: 6rem;
+}
+
+.bred {
+  background-color: red;
+}
+
+.bblue {
+  background-color: blue;
+}
+
+.bgreen {
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */

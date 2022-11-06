@@ -4,7 +4,6 @@ import time
 
 ''' VERSION SINCRONA SIN HILOS '''
 
-
 def worker1(rango):
 
     lista = list()
@@ -12,19 +11,18 @@ def worker1(rango):
     for i in range(rango):
 
         lista.append(i)
-        time.sleep(0.01)
 
     return lista
 
 
-t0 = time.time()
+# t0 = time.time()
 
 lista = worker1(100)
 
-tf = time.time() - t0
+# tf = time.time() - t0
 
-print("Tiempo total en el thread {}\n".format(tf))
-print(lista)
+# print("Tiempo total en el thread {}\n".format(tf))
+# print(lista)
 
 '''VERSION CON HILOS '''
 
@@ -37,7 +35,6 @@ def worker2(rango_ini, rango_fin):
     for i in range(rango_ini, rango_fin):
 
         lista2.append(i)
-        time.sleep(0.01)
 
     return lista2
 
@@ -69,8 +66,8 @@ for t in threads:
 tf = time.time() - t0
 
 
+print(lista2)
 print("\nTiempo total con {} thread {}\n".format(n_threads, tf))
-print(lista2)
 lista2.sort()
-print("\nLista ordenada")
-print(lista2)
+# print("\nLista ordenada")
+# print(lista2)

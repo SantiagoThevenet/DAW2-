@@ -1,0 +1,81 @@
+@mixin flexbox($justifyC)
+    display: flex
+    align-items: center
+    justify-content: $justifyC
+    
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Poppins', sans-serif
+
+
+
+body
+    @include flexbox(center)
+    height: 100vh
+    text-align: center
+
+    .main 
+        h2
+            font-size: 3rem
+            margin-bottom: 2rem
+
+        h3
+            margin-top: 2rem
+        input
+            width: 50%
+            height: 2rem
+            padding: 8px
+            &::placeholder
+                color: black
+                font-size: 1rem
+            
+        
+        #editar
+            display: flex
+            flex-direction: row
+            .caja-editar
+                display: flex
+                flex-direction: column
+                margin: 2rem
+                
+                h2
+                    font-size: 2.4rem
+                    
+                div
+                    @include flexbox($justifyC: center)
+                    flex-direction: row
+
+                    
+                    span
+                        font-size: 2rem
+                        margin: 1rem
+                        cursor: pointer
+            
+
+.circulo
+    background: red
+    padding: 1.4rem 
+    border-radius: 100%
+
+.red
+    color: red    
+.blue
+    color: blue    
+.green
+    color: green    
+.x2
+    font-size: 2rem 
+.x4
+    font-size: 4rem 
+.x6
+    font-size: 6rem 
+.bred
+    background-color: red 
+.bblue
+    background-color: blue 
+.bgreen
+    background-color: green 
+
