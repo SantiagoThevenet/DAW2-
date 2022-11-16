@@ -9,11 +9,12 @@
 }
 
 body {
-    background: rgb(13, 19, 49);
-    background: linear-gradient(95deg, rgba(13, 19, 49, 1) 0%, rgba(16, 22, 52, 1) 27%, rgba(19, 25, 55, 1) 50%, rgba(21, 27, 57, 1) 70%, rgba(24, 31, 61, 1) 100%);
-    height: 100vh;
-}
+    background: #0d1331;
+    background: linear-gradient(95deg, #0d1331 0%, #101634 27%, rgba(19, 25, 55, 1) 50%, rgba(21, 27, 57, 1) 70%, rgba(24, 31, 61, 1) 100%);
+    color: #cbd3f7;
 
+}
+/*
 header {
     display: flex;
     justify-content: space-between;
@@ -106,6 +107,7 @@ span {
 .caja{
     position: absolute;
 }
+
 button{
     transition: .5s;
 }
@@ -113,6 +115,7 @@ button{
     background-color: #d6ddfc;
     color: #0d1331;
 }
+
 @media screen and (max-width: 580px) {
     h1,h2{
         font-size: 1.7rem;
@@ -205,4 +208,4 @@ button{
         width: 100vh;
     }
 
-}
+} */

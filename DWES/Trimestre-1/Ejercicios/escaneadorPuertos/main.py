@@ -1,16 +1,21 @@
-import socket
-import time
 import threading
+import time
+import socket
 
-ip = '127.0.0.1'
-n_threads = 2
 
-def escanearPuerto(rango1, rango2):
-    for i in range(rango1, rango2):
+'''VERSION CON HILOS '''
+
+n_threads = 4
+lista2 = list()
+
+
+def worker2(rango_ini, rango_fin):
+    for i in range(rango_ini, rango_fin):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            puerto = s.connect_ex((ip, i))
+            puerto = s.connect_ex(('127.0.0.1', i))
             if puerto == 0:
-                print(f"Puerto: {i} abierto")
+                print(f'Puerto {i} abierto')                
+    return lista2
 
 
 p = 65535//n_threads
@@ -19,24 +24,25 @@ fines = list()
 
 inicio = 0
 fin = p
-threads = []
 
-if __name__ == '__main__':
-    timpoInicio = time.time()
+for i in range(n_threads):
+    inicios.append(inicio)
+    fines.append(fin)
+    inicio += p
+    fin += p
 
-    for i in range(n_threads):
-        inicios.append(inicio)
-        fines.append(fin)
-        inicio += p
-        fin += p
-    
+t0 = time.time()
+threads = list()
+for i in range(len(inicios)):
+    t = threading.Thread(target=worker2, args=(inicios[i], fines[i],))
+    threads.append(t)
+    t.start()
 
-    for i in range(n_threads):
-        t = threading.Thread(target=escanearPuerto, args=(inicios[i], fines[i],))
-        threads.append(t)
-        t.start()
-    
-    for i in threads:
-        i.join()
 
-    print(f"Tiempo total: {time.time() - timpoInicio}")
+for t in threads:
+    t.join()
+
+tf = time.time() - t0
+
+
+print("\nTiempo total con {} thread {}\n".format(n_threads, tf))

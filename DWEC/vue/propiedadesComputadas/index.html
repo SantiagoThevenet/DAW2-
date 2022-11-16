@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1>Contador de Caracteres</h1>
+        <div id="mi_app">   
+            <input v-on:keyup.enter = "logitud" type="text" placeholder="Escribe una frase" v-model="caracteres">
+            <div>
+                <div class="logitud">
+                    <h1>{{logitud}}</h1>
+                    <span>Caracteres en total</span>
+                </div>
+                <div class="nCharEsp">
+                    <h1>{{nCharEsp}}</h1>
+                    <span>Numero de caracteres sin Espacio</span>
+                </div>
+            </div>
+            <div>
+                <div class="nPal">
+                    <h1>{{nPal}}</h1>
+                    <span>Numero de Palabras</span>
+                </div>
+                <div class="nEsp">
+                    <h1>{{nEsp}}</h1>
+                    <span>Numero de Espacios</span>
+                </div>
+            </div>
+            <div>
+                <div class="primPalabra">
+                    <h1>{{primPalabra}}</h1>
+                    <span>Primera Palabra</span>
+                </div>
+                <div class="ultPalabra">
+                    <h1>{{ultPalabra}}</h1>
+                    <span>Ultima plabra</span>
+                </div>
+            </div>
+                
+                
+        </div>
+    </section>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

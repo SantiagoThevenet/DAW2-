@@ -7,31 +7,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <i class="fa-sharp fa-solid fa-s"></i>
-            <ul class="nav-bar" id="list">
-                <li id="li1">01. About</li>
-                <li>02. Experience</li>
-                <li>03. Work</li>
-                <li>04. Contact</li>
-                <button id="button-navbar">Resume</button>
+<body class="w-full h-screen">
+    <header id="header" class="flex justify-between items-center py-8 px-8 expandir">
+        <i class="fa-sharp fa-solid fa-s border px-4 py-3 rounded-xl text-md"></i>
+            <ul class="flex flex-row list-none" id="list">
+                <li class="p-4 text-sm">01. About</li>
+                <li class="p-4 text-sm">02. Experience</li>
+                <li class="p-4 text-sm">03. Work</li>
+                <li class="p-4 text-sm">04. Contact</li>
+                <button class="hover:bg-blue-200 hover:text-black duration-300 bg-none border rounded-sm px-6 ml-8">Resume</button>
             </ul>
         </div>
-        <div class="caja" onclick="menu()">
-            <div class="bar"></div>
-            <div class="bar"></div> 
-            <div class="bar"></div> 
+        <div class="block lg:hidden">
+            <button onclick="activar()"
+                class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
         </div>
     </header>
-    <main>
-        <div class="div-main">
+    <main class="md:h-4/5 md:flex md:justify-center md:items-centermd:"> 
+        <div class="md:flex md:justify-center md:flex-col w-3/5">
             <span>Hi, my name is</span>
-            <h1>Santiago Thevenet</h1>
-            <h2>I build things for the web.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos ad temporibus! Quas dolores asperiores ea nisi quasi ratione harum ut animi corrupti eos, commodi iste magnam necessitatibus <span>pariatur soluta?</span></p>
-            <button id="button-main">Check out my portfolio!</button>
+            <h1 class="text-6xl font-semibold md:py-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-400">Santiago Thevenet</h1>
+            <h2 class="text-4xl font-semibold md:py-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500"">I build things for the web.</h2>
+            <p class="text-1xl tracking-wide w-3/5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos ad temporibus! Quas dolores asperiores ea nisi quasi ratione harum ut animi corrupti eos, commodi iste magnam necessitatibus <span>pariatur soluta?</span></p>
+            <button class="hover:bg-blue-200 hover:text-black duration-300 bg-none border-blue-400 border rounded py-4 px-3 mt-4 w-56">Check out my portfolio!</button>
         </div>
     </main>
 

@@ -1,0 +1,45 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+@mixin flexbox
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+section
+    @include flexbox
+    height: 100vh
+
+    input
+        padding: .5rem 1rem
+        outline: nonee
+        width: 100%
+        font-size: 20px
+        font-weight: bold
+        letter-spacing: 2px
+        text-align: center
+        border-radius: 20px
+        border: 1px solid gray
+        margin: 1rem 0
+    
+    h1
+        font-size: 40px
+        margin-bottom: 1rem
+    div
+        display: flex
+        flex-direction: column
+        margin: 0 3rem
+        div
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: row
+
+            div
+                width: 100%
+                @include flexbox
+
+        

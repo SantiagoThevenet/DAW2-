@@ -1,0 +1,33 @@
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body section h1 {
+  margin-bottom: 1rem;
+  font-weight: 900;
+  font-size: 2rem;
+}
+body table tbody {
+  font-weight: 900;
+  background: orange;
+}
+
+td {
+  padding-right: 2rem;
+  border-bottom: 2px solid #c9c9c9;
+  padding: 0.2rem 0.5rem;
+}/*# sourceMappingURL=style.css.map */

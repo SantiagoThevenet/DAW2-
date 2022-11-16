@@ -1,0 +1,56 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+
+
+
+body
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+    width: 100%
+    background: #143457
+    #main
+        padding: 2rem 10rem
+        border-radius: 5px
+        box-shadow: 3px 3px 3px black 
+        background: white
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        div
+            display: flex
+            flex-direction: row
+            input
+                margin: 2rem
+                height: 2rem
+                border-radius: 5px
+                border: 1px solid
+                font-weight: bold
+                text-align: center
+                &:focus-visible
+                    box-shadow: 3px 3px 3px black 
+                    outline: none
+
+        button
+            border: 1px solid
+            border-radius: 8px
+            background: none
+            padding: .7rem 2rem
+            font-weight: bold
+            transition: .3s
+            &:hover
+                border: none
+                box-shadow: 3px 3px 3px black 
+                background: green
+                color: white
+
+        h2
+            margin-top: 2rem    
+input,button,h2
+    color: gray
+

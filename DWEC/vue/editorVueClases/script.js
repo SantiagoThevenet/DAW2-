@@ -20,4 +20,4 @@ Vue.createApp({
             this.texto = ''
         }
     }
-}).mount('#app')  
+}).mount('#app') 

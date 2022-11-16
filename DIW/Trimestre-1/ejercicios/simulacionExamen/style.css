@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #edf2f4;
+}
+body .main {
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+body .main .profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .main .profile img {
+  width: 22%;
+  margin: 1.5rem 5rem 3rem 0;
+}
+body .main .profile .profile-info h3 {
+  margin: 1rem 0;
+  font-weight: 500;
+}
+body .main .profile .profile-info .followers {
+  display: flex;
+  flex-direction: row;
+  background: #2b2d42;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: white;
+}
+body .main .profile .profile-info .followers div {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .main .profile .profile-info .followers div h2 {
+  font-weight: 500;
+}
+body .main .pictures {
+  display: flex;
+  width: 95%;
+}
+body .main .pictures .foto-descript {
+  margin: 2rem;
+  width: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #8d99ae;
+  border-radius: 1.5rem;
+}
+body .main .pictures .foto-descript p {
+  width: 90%;
+  padding: 0.8rem 1rem;
+}
+body .main .pictures .foto-descript img {
+  width: 90%;
+  padding: 1rem;
+  margin-top: 15px;
+}
+body .main .pictures .foto-descript button {
+  background: #2b2d42;
+  color: white;
+  padding: 0.8rem 2rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 940px) {
+  body {
+    height: 270vh;
+  }
+  .pictures {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .profile {
+    flex-direction: column !important;
+  }
+  .profile-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  #perfilfoto {
+    width: 40%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  h2 {
+    font-size: 1rem;
+  }
+  .num-followers {
+    margin: 0 0.7rem !important;
+    width: 95% !important;
+  }
+  .foto-descript {
+    width: 95% !important;
+  }
+  #perfilfoto {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
