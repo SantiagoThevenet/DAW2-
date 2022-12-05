@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+print("Content-Type: text/html\r\n\r\n")
+print("<html>")
+print("<head>")
+print("<title>Hola mundo - Primer programa CGI</title>")
+print("</head>")
+print("<body>")
+print("<h2>HOLA MUNDO! Mi primer programa CGI</h2>")
+print("</body>")
+print("</html>")

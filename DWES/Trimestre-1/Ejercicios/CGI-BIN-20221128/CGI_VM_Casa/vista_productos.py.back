@@ -1,0 +1,64 @@
+#!/usr/bin/python3
+import mysql.connector
+
+try:
+
+    miConex = mysql.connector.connect(
+        host='localhost',
+        user='root',
+        passwd='luis',
+        database='GAMES')
+
+    if miConex.is_connected():
+
+        print("Conexión establecida correctamente!!!")
+
+    miCursor = miConex.cursor()
+    miCursor.execute("SELECT * FROM PRODUCTOS;")
+
+##    miCursor.execute("INSERT INTO PRODUCTOS VALUES(NULL,?,?,?,?)")
+##    miConex.commit()
+
+    #miCursor = miConex.cursor(prepared=True)
+    productos = miCursor.fetchall()
+    # with open('productos.csv') as csv_file:
+        # csv_reader = csv.reader(csv_file, delimiter=',')
+        # next(csv_reader)
+        # for i in csv_reader:
+            # productos.append(tuple(i))
+        
+
+
+        #miCursor.executemany("INSERT INTO PRODUCTOS VALUES(NULL,?,?,?,?)",productos)
+    
+    
+    miConex.commit()
+    miConex.close()
+
+    
+
+
+except Exception as e:
+
+    print("Error de conexión!!!")
+    print(e)
+
+
+
+
+
+print("Content-Type: text/html\r\n\r\n")
+print("<html>")
+print("<meta charset='UTF-8'")
+print("<head>")
+print("<title>PRODUCTOS</title>")
+print("</head>")
+print("<body>")
+print("<h2>PRODUCTOS EN LA TIENDA</h2>")
+for i in productos:
+	print("<h3>{}</h3>".format(i))
+	print("<input type='checkbox' name='{}' value='off' />Añadir".format(i[0]))
+	print("<input type='text' name={} maxlength='3' size='1'<br>")
+
+print("</body>")
+print("</html>")

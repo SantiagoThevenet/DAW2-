@@ -1,0 +1,31 @@
+Dado un array de usuarios, el cual se encuentra inicializado en el fichero datos.js proporcionado, se pide obtener los siguientes datos de cada usuario:
+- El nombre en mayúsculas.
+- El email.
+- El género.
+- El texto acerca del usuario
+- Todos sus amigos.
+
+El array del fichero datos.js debe ser importado en el fichero script.js y trabajar desde el script.js.
+
+Se debe trabajar con funciones, todas de tipo flecha, es decir, no debe haber código a nivel global, salvo la importación del fichero datos.js.
+
+Todo el código debe ser creado en el fichero script.js, lo que significa que el body del fichero index.html sólo debe tener el enlace a script.js.
+
+RECURSOS OBLIGATORIOS A UTILIZAR
+- Tenéis incluidos los enlaces a fontawesome y a la fuente Montserrat de google fonts.
+
+Iconos utilizados:
+    - email: <i class="fas fa-envelope-open-text"></i>
+    - genero: <i class="fas fa-user"></i>
+    - acerca de y amistades: <i class="far fa-address-card"></i>
+
+Colores utilizados:
+    - color de fondo: 
+        background: rgb(1,25,54)
+        background: linear-gradient(90deg, rgba(1,25,54,1) 0%, rgba(70,83,98,1) 50%, rgba(66,66,66,1) 100%)
+    - color de las cajas: orange
+    - color del texto general: black
+    - color de fondo de la lista de amigos: #242424
+    - color del texto de la lista de amigos: white
+
+Muestra de cómo debería quedar la interfaz:     

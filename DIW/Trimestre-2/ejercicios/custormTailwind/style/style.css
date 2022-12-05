@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Para instalart taildwinds config: */
+/* Npx taildwindcss init  */
+
+
+/* Para que tailwind este pendiente del index.html */
+/* En el conf de tailwind hay que poner la ruta del html */
+/* npx tailwindcss -i ./style/style.css -o ./tailwind/output.css --watch */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  

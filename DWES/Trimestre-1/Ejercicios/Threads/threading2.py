@@ -4,12 +4,10 @@ import time
 
 ''' VERSION SINCRONA SIN HILOS '''
 
+
 def worker1(rango):
-
     lista = list()
-
     for i in range(rango):
-
         lista.append(i)
 
     return lista
@@ -31,9 +29,7 @@ lista2 = list()
 
 
 def worker2(rango_ini, rango_fin):
-
     for i in range(rango_ini, rango_fin):
-
         lista2.append(i)
 
     return lista2
