@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import mysql.connector
 
+
 try:
 
     miConex = mysql.connector.connect(

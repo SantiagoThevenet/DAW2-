@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amnung us</title>
+    <link rel="stylesheet" href="../output/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="flex flex-wrap justify-between items-center p-4">
+        <div>
+            <h1 class="text-5xl">Amung us ඞ</h1>
+        </div>
+        <button class="felx pc:hidden" onclick="activar()"><i class="fa-solid fa-bars"></i></button>
+        <div class="w-5/6 pc:flex hidden" id="menu">
+            <ul class="flex w-full flex-col pc:flex-row pc:justify-end">
+                <li class="m-3 cursor-pointer">Inicio</li>
+                <li class="m-3 cursor-pointer">Nosotros</li>
+                <li class="m-3 cursor-pointer">Contacto</li>
+            </ul>
+        </div>
+    </nav>
+    <main class="flex flex-col bg-gray-900 text-white pc:px-64 pc:py-10">
+        <div class="flex pc:flex-row flex-col p-10 sm pc:mb-10">
+            <img class="h-img rounded-md" src="../img/prod1.png">
+            <div class="mt-20 pc:ml-8">
+                <h1 class="text-4xl font-semibold">CAMISETA BAISCA <br> AZUL OSCURO</h1>
+                <p class="my-4 font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel iste suscipit
+                    sunt eos distinctio
+                    error. Laborum, omnis fugit? Unde sapiente molestiae cupiditate obcaecati vel quos officiis quidem
+                    omnis maiores tenetur Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, rem debitis.
+                    Quam harum corrupti unde iste nam, illum cumque hic sit libero quisquam aperiam ullam numquam,
+                    doloremque possimus officia adipisci?.</p>
+                <button class="bg-orange-500 py-2 px-4 rounded-md text-black hover:bg-blue-600 hover:text-white">Añadir
+                    al carrito</button>
+            </div>
+        </div>
+        <div class="flex pc:flex-row-reverse flex-col p-10 ">
+            <img class="h-img rounded-md" src="../img/prod2.png">
+            <div class="mt-16">
+                <h1 class="text-4xl font-semibold">CAMISETA BAISCA <br> MARRON BARRO</h1>
+                <p class="my-4 font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel iste suscipit
+                    sunt eos distinctio
+                    error. Laborum, omnis fugit? Unde sapiente molestiae cupiditate obcaecati vel quos officiis quidem
+                    omnis maiores tenetur Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, rem debitis.
+                    Quam harum corrupti unde iste nam, illum cumque hic sit libero quisquam aperiam ullam numquam,
+                    doloremque possimus officia adipisci?.</p>
+                <button class="bg-orange-500 py-2 px-4 rounded-md text-black hover:bg-blue-600 hover:text-white ">Añadir
+                    al carrito</button>
+            </div>
+        </div>
+    </main>
+    <footer class="flex justify-center content-center">
+        <i class="fa-brands fa-instagram my-4 text-3xl"></i>
+        <i class="fa-brands fa-twitter mx-8 my-4 text-3xl"></i>
+        <i class="fa-brands fa-youtube my-4 text-3xl"></i>
+    </footer>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

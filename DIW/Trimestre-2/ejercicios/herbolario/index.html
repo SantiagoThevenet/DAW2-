@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amnung us</title>
+    <link rel="stylesheet" href="./output/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="flex flex-wrap justify-between items-center p-4 bg-color1">
+        <div>
+            <i class="fa-solid fa-cannabis pl-8 text-6xl"></i>
+        </div>
+        <button class="felx pc:hidden" onclick="activar()"><i class="fa-solid fa-bars"></i></button>
+        <div class="w-5/6 pc:flex hidden" id="menu">
+            <ul class="flex w-full flex-col pc:flex-row pc:justify-end">
+                <li class="m-3 cursor-pointer">Inicio</li>
+                <li class="m-3 cursor-pointer">Nosotros</li>
+                <li class="m-3 cursor-pointer">Contacto</li>
+            </ul>
+        </div>
+    </nav>
+    <main class="bg-color2">
+        <div class="h-80 bg-gangaImg bg-no-repeat bg-cover bg-center flex justify-center text-6xl font-bold">
+            <h1 class="py-52">Herbolario</h1>
+        </div>
+    </main>
+    <footer class="flex justify-center content-center bg-color3">
+        <i class="fa-brands fa-instagram my-4 text-3xl"></i>
+        <i class="fa-brands fa-twitter mx-8 my-4 text-3xl"></i>
+        <i class="fa-brands fa-youtube my-4 text-3xl"></i>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

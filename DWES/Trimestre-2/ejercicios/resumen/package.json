@@ -1,0 +1,23 @@
+{
+  "name": "resumen",
+  "version": "1.0.0",
+  "description": "Esto es un primer proyecto de Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "primero",
+    "node",
+    "proyecto"
+  ],
+  "author": "SSS",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
